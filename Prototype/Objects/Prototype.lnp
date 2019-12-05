@@ -1,0 +1,10 @@
+--cpu Cortex-M4.fp
+".\objects\main.o"
+".\objects\uart.o"
+"C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Lib\ARM\arm_cortexM4lf_math.lib"
+".\objects\startup_mk64f12.o"
+".\objects\system_mk64f12.o"
+--strict --scatter ".\Objects\Prototype.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Prototype.map" -o .\Objects\Prototype.axf
